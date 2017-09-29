@@ -65,4 +65,12 @@ public class Song {
 					getYear();
 		return s;
 	}
+	
+	public String getString(){	//for sorting returns back Title + Artist
+        return (this.getTitle() + "\t" + this.getArtist()).toLowerCase();
+	}
+	public int compareTo(Song new_song){			//for sorting returns back number for sorting 
+		return this.getString().compareTo(new_song.getString());
+		
+	}
 }
