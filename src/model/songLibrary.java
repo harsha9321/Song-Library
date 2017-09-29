@@ -10,6 +10,8 @@ import java.util.*;
 import javafx.collections.ObservableList;
 import java.text.Collator;
 
+
+
 public class songLibrary {
 	//String file_name = "Songlibrary.txt";
 		songLibrary model;
@@ -23,7 +25,7 @@ public class songLibrary {
 			//read the txt file whenever a songLibrary is creates
 		}
 		//remove static
-		public static int add(String name, String artist, String album, String year){
+		public static int add(String name, String artist, String album, int year){
 			Song newly_added_song = new Song(name, artist, album, year);
 			songList.add(newly_added_song);	
 			return 0;
@@ -33,7 +35,7 @@ public class songLibrary {
 		
 		public static void main(String args[]){
 			
-			songLibrary.add("dope", "Akash", "asd", "asd");
+			songLibrary.add("dope", "Akash", "asd", 2232);
 			Song temp;
 			Iterator<Song> itr= songList.iterator();  
 			  while(itr.hasNext()){  

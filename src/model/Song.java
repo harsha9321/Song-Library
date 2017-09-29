@@ -7,7 +7,7 @@ public class Song {
 	private String album;
 	private int year;
 	
-	public Song(String t, String art, String alb, int y) {
+	public Song(String t, String art, String alb,int y) {
 		this.title = t;
 		this.artist = art;
 		this.album = alb;
